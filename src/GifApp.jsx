@@ -3,7 +3,7 @@ import React from 'react';
 const GifApp = () => {
   return (
     <>
-      <h2>Gif Search</h2>
+      <h1>Gif Search ⚡</h1>
       <hr/>
     </>
   );
