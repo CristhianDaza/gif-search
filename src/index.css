@@ -14,10 +14,11 @@ body {
 
 input {
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: grey;
   margin: 15px 0;
   border-radius: 15px;
+  height: 55px;
 }
 
 ol {
