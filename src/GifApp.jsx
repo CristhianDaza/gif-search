@@ -10,7 +10,10 @@ const GifApp = () => {
   return (
     <>
       <h1>Gif Search ⚡</h1>
-      <AddCategory />
+      <AddCategory
+        setCategories={setCategories}
+        categories={categories}
+      />
       <hr/>
       <ol>
         {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const AddCategory = () => {
+export const AddCategory = ({ setCategories, categories }) => {
   const [inputValue, setInputValue] = useState('')
 
   const handleInputChange = (e) => {
@@ -9,6 +9,15 @@ export const AddCategory = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
+    if (inputValue.trim().length > 0) {
+      setCategories(
+        [...categories,
+        inputValue]
+      )
+      setInputValue('')
+    } else {
+      alert('La busqueda no debe ir vacia')
+    }
   }
 
   return (
