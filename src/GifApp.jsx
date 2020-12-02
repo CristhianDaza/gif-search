@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
+import { AddCategory } from './components/AddCategory';
 
 const GifApp = () => {
-  // const categories = ['Dragon Ball', 'Samurai X']
+  // const handleAdd = () => {
+  //   setCategories(['Hunter', ...categories])
+  // }
   const [categories, setCategories] = useState(['Dragon Ball', 'Samurai X'])
-  const handleAdd = () => {
-    setCategories(['Hunter', ...categories])
-  }
 
   return (
     <>
       <h1>Gif Search ⚡</h1>
+      <AddCategory />
       <hr/>
-      <input id="texto" type="text"/>
-      <button onClick={handleAdd}>Agregar</button>
       <ol>
         {
           categories.map(categorie => {
