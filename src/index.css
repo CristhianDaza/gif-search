@@ -11,3 +11,15 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+
+input {
+  width: 100%;
+  font-size: 2rem;
+  color: grey;
+  margin: 15px 0;
+  border-radius: 15px;
+}
+
+ol {
+  margin-top: 25px;
+}
