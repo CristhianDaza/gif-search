@@ -6,7 +6,7 @@ const GifApp = () => {
   // const handleAdd = () => {
   //   setCategories(['Hunter', ...categories])
   // }
-  const [categories, setCategories] = useState(['Goku'])
+  const [categories, setCategories] = useState([])
 
   return (
     <>

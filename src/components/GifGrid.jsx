@@ -19,24 +19,27 @@ export const GifGrid = ({category}) => {
       return {
         id: img.id,
         title: img.title,
-        url: img.images?.downsized_medium.url
+        url: img.images?.downsized_large.url
       }
     })
-    // console.log(gifs)
+    console.log(data)
     setImages(gifs)
   }
 
   return (
-    <div>
-      <h3>{category}</h3>
-      {
-        images.map(img => (
-          <GifGridItem
-            key={img.id}
-            {...img}
-          />
-        ))
-      }
-    </div>
+    <>
+      <h3 className="categoryTitle">{category}</h3>
+      <div className="card-grid">
+        {
+          images.map(img => (
+            <GifGridItem
+              key={img.id}
+              {...img}
+            />
+          ))
+        }
+      </div>
+      <hr className="hr"/>
+    </>
   )
 }
