@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export const GifGrid = ({category}) => {
   const api = process.env.REACT_APP_API
+
+  useEffect(() => {
+    getGif()
+  }, [])
 
   const getGif = async () => {
 
@@ -17,8 +21,6 @@ export const GifGrid = ({category}) => {
     })
     console.log(gifs)
   }
-
-  getGif()
 
   return (
     <div>
